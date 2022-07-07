@@ -18,7 +18,7 @@ const themes = {
   green: {
     '--color-black': '#000',
     '--color-primary': '#93c841',
-    '--color-secondary': '##f68622',
+    '--color-secondary': '#f68622',
     '--color-tertiary': '#CCCCCC',
     '--color-white': '#FFFFFF',
   },
