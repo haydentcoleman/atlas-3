@@ -17,15 +17,15 @@ const themes = {
   },
   green: {
     '--color-black': '#000',
-    '--color-primary': '#006600',
-    '--color-secondary': '#006827',
+    '--color-primary': '#93c841',
+    '--color-secondary': '##f68622',
     '--color-tertiary': '#CCCCCC',
     '--color-white': '#FFFFFF',
   },
 };
 
 export default function ThemeStyles() {
-  const themeColor = appConfig?.themeColor ?? 'blue';
+  const themeColor = appConfig?.themeColor ?? 'green';
 
   return (
     <style jsx global>{`
