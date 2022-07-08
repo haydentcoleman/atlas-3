@@ -25,7 +25,7 @@ const themes = {
 };
 
 export default function ThemeStyles() {
-  const themeColor = appConfig?.themeColor ?? 'red';
+  const themeColor = appConfig?.themeColor ?? 'green';
 
   return (
     <style jsx global>{`
