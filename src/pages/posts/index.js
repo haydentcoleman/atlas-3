@@ -52,7 +52,7 @@ export default function Page() {
       <Header />
 
       <Main>
-        <EntryHeader title="Latest Posts" />
+        <EntryHeader title="What's New?" />
         <div className="container">
           <Posts posts={data?.nodes} id="posts-list" />
           <LoadMore
