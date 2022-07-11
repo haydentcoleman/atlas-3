@@ -1,7 +1,6 @@
 import { getNextStaticProps } from '@faustjs/next';
 import React from 'react';
 import { client } from 'client';
-import { FaArrowRight } from 'react-icons/fa';
 import {
   Posts,
   Header,
@@ -10,8 +9,6 @@ import {
   Main,
   Button,
   Heading,
-  CTA,
-  Testimonials,
   SEO,
 } from 'components';
 import styles from 'styles/pages/_Home.module.scss';
@@ -27,8 +24,7 @@ export default function Page() {
     where: {
       categoryName: 'uncategorized',
     },
-  });
-  const testimonials = useQuery().testimonials();
+  })
   const mainBanner = {
     sourceUrl: '/static/banner.jpeg',
     mediaDetails: { width: 1200, height: 600 },
