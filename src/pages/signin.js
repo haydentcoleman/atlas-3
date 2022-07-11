@@ -40,8 +40,6 @@ export default function Page() {
             </div>
           </section>
           <section className ="box">
-            <Box>
-            </Box>
           </section>
         </div>
       </Main>
