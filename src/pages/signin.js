@@ -41,7 +41,7 @@ export default function Page() {
           </section>
           <section className ="container">
             <Container>
-            </conatiner>
+            </container>
           </section>
         </div>
       </Main>
