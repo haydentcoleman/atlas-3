@@ -4,7 +4,6 @@ import { client } from 'client';
 import {
   Header,
   Footer,
-  EntryHeader,
   Main,
   Button,
   Heading,
@@ -22,7 +21,6 @@ export default function Page() {
     <>
       <SEO
         title={pageTitle(generalSettings)}
-        imageUrl={mainBanner?.sourceUrl}
       />
 
       <Header />
