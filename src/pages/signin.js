@@ -27,7 +27,7 @@ export default function Page() {
 
       <Main className={styles.home}>
         
-        <div className="container">
+        <div className="box">
           <section className="hero text-center">
             <Heading className={styles.heading} level="h1">
               SIGN IN
@@ -37,8 +37,6 @@ export default function Page() {
                 SIGN IN
               </Button>
             </div>
-          </section>
-          <section className ="box">
           </section>
         </div>
       </Main>
