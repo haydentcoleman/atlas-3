@@ -2,7 +2,6 @@ import { getNextStaticProps } from '@faustjs/next';
 import React from 'react';
 import { client } from 'client';
 import {
-  Posts,
   Header,
   Footer,
   EntryHeader,
@@ -19,12 +18,6 @@ const postsPerPage = 3;
 export default function Page() {
   const { useQuery, usePosts } = client;
   const generalSettings = useQuery().generalSettings;
-  const posts = usePosts({
-    first: postsPerPage,
-    where: {
-      categoryName: 'uncategorized',
-    },
-  })
   const mainBanner = {
     sourceUrl: '/static/banner.jpeg',
     mediaDetails: { width: 1200, height: 600 },
