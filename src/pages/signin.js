@@ -57,6 +57,35 @@ export default function Page() {
               </Button>
             </div>
           </section>
+          <section className={styles.posts}>
+            <Heading className={styles.heading} level="h2">
+              Latest Posts
+            </Heading>
+            <Posts posts={posts?.nodes} id="posts-list" />
+          </section>
+          <section className="cta">
+            <CTA
+              Button={() => (
+                <Button href="/posts">
+                  Get Started <FaArrowRight style={{ marginLeft: `1rem` }} />
+                </Button>
+              )}
+            >
+              <span>
+                Learn about Core Web Vitals and how Atlas can help you reach
+                your most demanding speed and user experience requirements.
+              </span>
+            </CTA>
+          </section>
+          <section className={styles.testimonials}>
+            <Heading className={styles.heading} level="h2">
+              Testimonials
+            </Heading>
+            <p className={styles.description}>
+              Here are just a few of the nice things our customers have to say.
+            </p>
+            <Testimonials testimonials={testimonials?.nodes} />
+          </section>
         </div>
       </Main>
 
