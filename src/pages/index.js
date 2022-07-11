@@ -57,7 +57,7 @@ export default function Page() {
             </p>
             <div className={styles.actions}>
               <Button styleType="secondary" href="/contact-us">
-                GET STARTED
+                SIGN IN
               </Button>
               <Button styleType="primary" href="/about">
                 LEARN MORE
