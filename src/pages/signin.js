@@ -40,6 +40,8 @@ export default function Page() {
             </div>
           </section>
           <section className ="container">
+            <Container>
+            </conatiner>
           </section>
         </div>
       </Main>
