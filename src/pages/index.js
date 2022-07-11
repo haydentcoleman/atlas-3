@@ -56,7 +56,7 @@ export default function Page() {
               with our one &apos;WOW&apos; way.{' '}
             </p>
             <div className={styles.actions}>
-              <Button styleType="secondary" href="/contact-us">
+              <Button styleType="secondary" href="/signin">
                 SIGN IN
               </Button>
               <Button styleType="primary" href="/about">
