@@ -16,7 +16,7 @@ export default function Page() {
   const { useQuery } = client;
   const generalSettings = useQuery().generalSettings;
   
-  };
+
 
   return (
     <>
