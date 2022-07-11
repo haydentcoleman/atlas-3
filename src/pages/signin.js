@@ -63,8 +63,6 @@ export default function Page() {
             </Heading>
             <Posts posts={posts?.nodes} id="posts-list" />
           </section>
-          
-          
         </div>
       </Main>
 
