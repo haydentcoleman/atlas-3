@@ -51,10 +51,6 @@ export default function Page() {
             <Heading className={styles.heading} level="h1">
               SIGN IN
             </Heading>
-            <p className={styles.description}>
-              At WOWORKS we work hard to bring you the best service 
-              with our one &apos;WOW&apos; way.{' '}
-            </p>
             <div className={styles.actions}>
               <Button styleType="secondary" href="/signin">
                 SIGN IN
