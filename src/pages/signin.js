@@ -15,10 +15,7 @@ import { pageTitle } from 'utils';
 export default function Page() {
   const { useQuery } = client;
   const generalSettings = useQuery().generalSettings;
-  const mainBanner = {
-    sourceUrl: '/static/banner.jpeg',
-    mediaDetails: { width: 1200, height: 600 },
-    altText: 'Portfolio Banner',
+  
   };
 
   return (
@@ -31,7 +28,7 @@ export default function Page() {
       <Header />
 
       <Main className={styles.home}>
-        <EntryHeader image={mainBanner} />
+        
         <div className="container">
           <section className="hero text-center">
             <Heading className={styles.heading} level="h1">
