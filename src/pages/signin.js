@@ -25,19 +25,20 @@ export default function Page() {
 
       <Header />
 
-      <Main className={styles.home}>
+      <Main className={styles.box}>
         
         <div className="box">
-          <section className="hero text-center">
-            <Heading className={styles.heading} level="h1">
-              SIGN IN
-            </Heading>
-            <div className={styles.actions}>
-              <Button styleType="secondary" href="/signin">
+          
+            <section className="hero text-center">
+              <Heading className={styles.heading} level="h1">
                 SIGN IN
-              </Button>
-            </div>
-          </section>
+              </Heading>
+              <div className={styles.actions}>
+                <Button styleType="secondary" href="/signin">
+                  SIGN IN
+                </Button>
+              </div>
+            </section>
         </div>
       </Main>
 
