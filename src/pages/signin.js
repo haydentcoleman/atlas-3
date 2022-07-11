@@ -53,12 +53,7 @@ export default function Page() {
               </Button>
             </div>
           </section>
-          <section className={styles.posts}>
-            <Heading className={styles.heading} level="h2">
-              Latest Posts
-            </Heading>
-            <Posts posts={posts?.nodes} id="posts-list" />
-          </section>
+          
         </div>
       </Main>
 
