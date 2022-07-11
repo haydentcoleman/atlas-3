@@ -13,6 +13,7 @@ import {
 import styles from 'styles/pages/_Home.module.scss';
 import { pageTitle } from 'utils';
 export default function Page() {
+  const { useQuery } = client;
   const generalSettings = useQuery().generalSettings;
   const mainBanner = {
     sourceUrl: '/static/banner.jpeg',
