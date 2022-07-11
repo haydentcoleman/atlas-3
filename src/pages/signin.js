@@ -7,7 +7,6 @@ import {
   Main,
   Button,
   Heading,
-  Box,
   SEO,
 } from 'components';
 import styles from 'styles/pages/_Home.module.scss';
