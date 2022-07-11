@@ -49,7 +49,7 @@ export default function Page() {
         <div className="container">
           <section className="hero text-center">
             <Heading className={styles.heading} level="h1">
-              Welcome to your Blueprint
+              SIGN IN
             </Heading>
             <p className={styles.description}>
               At WOWORKS we work hard to bring you the best service 
