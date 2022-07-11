@@ -7,6 +7,7 @@ import {
   Main,
   Button,
   Heading,
+  Container,
   SEO,
 } from 'components';
 import styles from 'styles/pages/_Home.module.scss';
@@ -38,7 +39,8 @@ export default function Page() {
               </Button>
             </div>
           </section>
-          
+          <section className ="container">
+          </section>
         </div>
       </Main>
 
