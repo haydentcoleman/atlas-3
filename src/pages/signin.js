@@ -64,15 +64,7 @@ export default function Page() {
             <Posts posts={posts?.nodes} id="posts-list" />
           </section>
           
-          <section className={styles.testimonials}>
-            <Heading className={styles.heading} level="h2">
-              Testimonials
-            </Heading>
-            <p className={styles.description}>
-              Here are just a few of the nice things our customers have to say.
-            </p>
-            <Testimonials testimonials={testimonials?.nodes} />
-          </section>
+          
         </div>
       </Main>
 
