@@ -2,8 +2,6 @@ import { getNextStaticProps } from '@faustjs/next';
 import React from 'react';
 import { client } from 'client';
 import {
-  Header,
-  Footer,
   Main,
   Button,
   Heading,
