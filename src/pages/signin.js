@@ -9,7 +9,7 @@ import {
   Heading,
   SEO,
 } from 'components';
-import styles from 'styles/pages/_Home.module.scss';
+import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
 export default function Page() {
   const { useQuery } = client;
