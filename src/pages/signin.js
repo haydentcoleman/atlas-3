@@ -34,7 +34,7 @@ export default function Page() {
       <Main className={styles.box}>
         
         <div className="box">
-            <EntryHeader image={mainBanner} />
+            <Main image={mainBanner} />
             <section className="hero text-center">
               <Heading className={styles.heading} level="h1">
                 SIGN IN
