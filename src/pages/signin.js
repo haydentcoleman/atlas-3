@@ -32,7 +32,7 @@ export default function Page() {
         imageUrl={mainBanner?.sourceUrl}
       />
 
-      <Body>
+      
         <Main className={styles.box}>
 
           <div className="box">
@@ -60,7 +60,7 @@ export default function Page() {
               </section>
           </div>
         </Main>
-      </Body>
+      
     </>
   );
 }
