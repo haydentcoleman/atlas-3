@@ -34,7 +34,7 @@ export default function Page() {
                 SIGN IN
               </Heading>
               <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <input type="text" class="form__input" autofocus placeholder="Username or email"></input>
               </div>
               <div className={styles.actions}>
                 <Button styleType="secondary" href="/signin">
