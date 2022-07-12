@@ -11,6 +11,11 @@ import {
 } from 'components';
 import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
+const mainBanner = {
+    sourceUrl: '/static/banner.jpeg',
+    mediaDetails: { width: 300, height: 150 },
+    altText: 'Portfolio Banner',
+  };
 export default function Page() {
   const { useQuery } = client;
   const generalSettings = useQuery().generalSettings;
@@ -21,6 +26,7 @@ export default function Page() {
     <>
       <SEO
         title={pageTitle(generalSettings)}
+        imageUrl={mainBanner?.sourceUrl}
       />
 
       <Header />
@@ -28,7 +34,7 @@ export default function Page() {
       <Main className={styles.box}>
         
         <div className="box">
-          
+            <EntryHeader image={mainBanner} />
             <section className="hero text-center">
               <Heading className={styles.heading} level="h1">
                 SIGN IN
