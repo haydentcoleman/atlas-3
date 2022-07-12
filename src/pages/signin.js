@@ -1,6 +1,7 @@
 import { getNextStaticProps } from '@faustjs/next';
 import React from 'react';
 import { client } from 'client';
+import { FeaturedImage } from 'components';
 import {
   Header,
   Footer,
@@ -16,6 +17,9 @@ const mainBanner = {
     mediaDetails: { width: 300, height: 150 },
     altText: 'Portfolio Banner',
   };
+const MyFeaturedImage = () => (
+  <FeaturedImage image={mainBAnner} width={300} height={1500} />
+);
 export default function Page() {
   const { useQuery } = client;
   const generalSettings = useQuery().generalSettings;
@@ -34,7 +38,11 @@ export default function Page() {
       <Main className={styles.box}>
         
         <div className="box">
-            <box image={mainBanner} />
+            <FeaturedImage
+              className={styles['featured-image']}
+              image={image}
+              priority
+            />
             <section className="hero text-center">
               <Heading className={styles.heading} level="h1">
                 SIGN IN
