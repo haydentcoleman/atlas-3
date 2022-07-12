@@ -18,7 +18,7 @@ const mainBanner = {
     altText: 'Portfolio Banner',
   };
 const MyFeaturedImage = () => (
-  <FeaturedImage image={mainBAnner} width={300} height={1500} />
+  <FeaturedImage image={mainBanner} width={300} height={1500} />
 );
 export default function Page() {
   const { useQuery } = client;
