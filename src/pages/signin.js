@@ -31,35 +31,34 @@ export default function Page() {
         imageUrl={mainBanner?.sourceUrl}
       />
 
-      
-        <Main className={styles.box}>
 
-          <div className="box">
-              <FeaturedImage
-                className={styles['featured-image']}
-                image={MyFeaturedImage}
-                priority
-              />
-              <section className="hero text-center">
-                <Heading className={styles.heading} level="h1">
+      <Main className={styles.box}>
+        
+        <div className="box">
+            <FeaturedImage
+              className={styles['featured-image']}
+              image={MyFeaturedImage}
+              priority
+            />
+            <section className="hero text-center">
+              <Heading className={styles.heading} level="h1">
+                SIGN IN
+              </Heading>
+              <div className="form__input-group">
+                <input type="text" className="form__input" autoFocus placeholder="Username or email"></input>
+              </div>
+              <div className="form__input-group">
+                <input type="password" className="form__input" autoFocus placeholder="Password"></input>
+                
+              </div>
+              <div className={styles.actions}>
+                <Button styleType="secondary" href="/signin">
                   SIGN IN
-                </Heading>
-                <div className="form__input-group">
-                  <input type="text" className="form__input" autoFocus placeholder="Username or email"></input>
-                </div>
-                <div className="form__input-group">
-                  <input type="password" className="form__input" autoFocus placeholder="Password"></input>
-
-                </div>
-                <div className={styles.actions}>
-                  <Button styleType="secondary" href="/signin">
-                    SIGN IN
-                  </Button>
-                </div>
-              </section>
-          </div>
-        </Main>
-      
+                </Button>
+              </div>
+            </section>
+        </div>
+      </Main>
     </>
   );
 }
