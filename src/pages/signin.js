@@ -33,6 +33,9 @@ export default function Page() {
               <Heading className={styles.heading} level="h1">
                 SIGN IN
               </Heading>
+              <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+              </div>
               <div className={styles.actions}>
                 <Button styleType="secondary" href="/signin">
                   SIGN IN
