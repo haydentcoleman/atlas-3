@@ -40,7 +40,7 @@ export default function Page() {
         <div className="box">
             <FeaturedImage
               className={styles['featured-image']}
-              image={image}
+              image={MyFeaturedImage}
               priority
             />
             <section className="hero text-center">
