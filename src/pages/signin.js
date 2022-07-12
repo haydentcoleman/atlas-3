@@ -36,6 +36,10 @@ export default function Page() {
               <div className="form__input-group">
                 <input type="text" className="form__input" autoFocus placeholder="Username or email"></input>
               </div>
+              <div className="form__input-group">
+                <input type="password" className="form__input" autoFocus placeholder="Password"></input>
+                
+              </div>
               <div className={styles.actions}>
                 <Button styleType="secondary" href="/signin">
                   SIGN IN
