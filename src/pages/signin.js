@@ -1,7 +1,6 @@
 import { getNextStaticProps } from '@faustjs/next';
 import React from 'react';
 import { client } from 'client';
-import { FeaturedImage } from 'components';
 import {
   Header,
   Footer,
@@ -9,6 +8,7 @@ import {
   Button,
   Heading,
   SEO,
+  FeaturedImage
 } from 'components';
 import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
