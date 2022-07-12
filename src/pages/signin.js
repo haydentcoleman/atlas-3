@@ -3,6 +3,7 @@ import React from 'react';
 import { client } from 'client';
 import {
   Main,
+  Body,
   Button,
   Heading,
   SEO,
@@ -31,7 +32,7 @@ export default function Page() {
         imageUrl={mainBanner?.sourceUrl}
       />
 
-      <body>
+      <Body>
         <Main className={styles.box}>
 
           <div className="box">
@@ -59,7 +60,7 @@ export default function Page() {
               </section>
           </div>
         </Main>
-      </body>
+      </Body>
     </>
   );
 }
