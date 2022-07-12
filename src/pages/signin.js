@@ -33,7 +33,6 @@ export default function Page() {
         imageUrl={mainBanner?.sourceUrl}
       />
 
-      <Header />
 
       <Main className={styles.box}>
         
@@ -62,8 +61,6 @@ export default function Page() {
             </section>
         </div>
       </Main>
-
-      <Footer />
     </>
   );
 }
