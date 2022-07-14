@@ -31,7 +31,7 @@ export default function Page() {
         imageUrl={mainBanner?.sourceUrl}
       />
 
-      <Main className = {styles.body}>
+      
         <Main className={styles.box}>
 
           <div className="box">
@@ -59,7 +59,6 @@ export default function Page() {
               </section>
           </div>
         </Main>
-       </Main>
     </>
   );
 }
