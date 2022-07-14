@@ -30,12 +30,7 @@ export default function Page() {
         title={pageTitle(generalSettings)}
         imageUrl={mainBanner?.sourceUrl}
       />
-          <style>
-          .body  {
-            
-            background: #cccccc;
-          }
-          </style>
+      
       
       
         <Main className={styles.box}>
