@@ -31,7 +31,7 @@ export default function Page() {
         imageUrl={mainBanner?.sourceUrl}
       />
           <style>
-          body  {
+          .body  {
             
             background: #cccccc;
           }
