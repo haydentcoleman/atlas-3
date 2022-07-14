@@ -30,13 +30,7 @@ export default function Page() {
         title={pageTitle(generalSettings)}
         imageUrl={mainBanner?.sourceUrl}
       />
-      <div
-      :style"{
-        'background-image': `/public/sign in screen.jpg`,
-        width: '100px',
-        height: '100px',
-      }"
-      ></div>
+      
       
         <Main className={styles.box}>
 
