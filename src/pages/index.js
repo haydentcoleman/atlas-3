@@ -31,7 +31,7 @@ export default function Page() {
         imageUrl={mainBanner?.sourceUrl}
       />
       <div
-      :style="{
+      :style"{
         'background-image': `/public/sign in screen.jpg`,
         width: '100px',
         height: '100px',
