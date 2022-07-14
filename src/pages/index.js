@@ -52,7 +52,7 @@ export default function Page() {
                 
               </div>
               <div className={styles.actions}>
-                <Button styleType="secondary" href="/signin">
+                <Button styleType="secondary" href="/home">
                   SIGN IN
                 </Button>
               </div>
