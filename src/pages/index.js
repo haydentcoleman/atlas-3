@@ -33,7 +33,7 @@ export default function Page() {
           <style>
           body  {
             
-            background-color: #cccccc;
+            background: #cccccc;
           }
           </style>
       
