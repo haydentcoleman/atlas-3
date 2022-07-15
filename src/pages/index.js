@@ -31,8 +31,8 @@ export default function Page() {
       
       
      
-       <Main className={styles.body} >
-         <div className="body" background-image: image={mainBanner}>
+       <Main className={styles.body} background={mainBanner}>
+         <div className="body" background-image={mainBanner}>
           
             <Main className={styles.box}>
               <div className="box">
@@ -57,7 +57,7 @@ export default function Page() {
               </div>
             </Main>
                   
-          </div>
+        </div>
        </Main>
       
     </>
