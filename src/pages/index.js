@@ -6,7 +6,7 @@ import {
   Button,
   Heading,
   SEO,
-  FeaturedImage
+ 
 } from 'components';
 import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
