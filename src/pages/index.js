@@ -62,7 +62,7 @@ export default function Page() {
               </section>
           </div>
           </Main>
-          </>        
+          </FeaturedImage>        
         </div>
        </Main>
       
