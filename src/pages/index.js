@@ -32,8 +32,8 @@ export default function Page() {
       />
       
       
-      
-        <Main className={styles.box}>
+      <div className="body">
+        <Main className={styles.box} >
 
           <div className="box">
               <FeaturedImage
@@ -60,6 +60,7 @@ export default function Page() {
               </section>
           </div>
         </Main>
+      </div>
     </>
   );
 }
