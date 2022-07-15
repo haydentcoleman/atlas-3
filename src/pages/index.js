@@ -11,7 +11,7 @@ import {
 import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
 const mainBanner = {
-    sourceUrl: '/static/banner.jpeg',
+    sourceUrl: '/static/sign-in-screen.jpeg',
     mediaDetails: { width: 300, height: 150 },
     altText: 'Portfolio Banner',
   };
@@ -35,6 +35,7 @@ export default function Page() {
      
        <Main className={styles.body} >
          <div className="body">
+           <FeaturedImage image={mainBanner} />
           <Main className={styles.box} >
           <div className="box">
               <FeaturedImage
