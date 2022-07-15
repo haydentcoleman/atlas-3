@@ -31,7 +31,8 @@ export default function Page() {
       
       
      
-       <Main className={styles.body} background-image ={mainBanner} >
+       <Main className={styles.body} style{
+         background-image ={mainBanner}} >
          <div className="body">
           
             <Main className={styles.box}>
