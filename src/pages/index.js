@@ -15,9 +15,7 @@ const mainBanner = {
     mediaDetails: { width: 1000, height: 800 },
     altText: 'Portfolio Banner',
   };
-const MyFeaturedImage = () => (
-  <FeaturedImage image={mainBanner} width={1000} height={800} />
-);
+
 export default function Page() {
   const { useQuery } = client;
   const generalSettings = useQuery().generalSettings;
@@ -35,7 +33,7 @@ export default function Page() {
      
        <Main className={styles.body} >
          <div className="body">
-           <FeaturedImage image={mainBanner}>
+          <FeaturedImage image={mainBanner}>
           <Main className={styles.box} >
           <div className="box">
               
