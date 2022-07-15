@@ -31,32 +31,32 @@ export default function Page() {
       
       
      
-       <Main className={styles.body} >
+       <Main className={styles.body} image ={mainBanner} >
          <div className="body">
-          <FeaturedImage image={mainBanner}>
-          <Main className={styles.box} >
-          <div className="box">
-              
-              <section className="hero text-center">
-                <Heading className={styles.heading} level="h1">
-                  SIGN IN
-                </Heading>
-                <div className="form__input-group">
-                  <input type="text" className="form__input" autoFocus placeholder="Username or email"></input>
-                </div>
-                <div className="form__input-group">
-                  <input type="password" className="form__input" autoFocus placeholder="Password"></input>
+          
+            <Main className={styles.box}>
+              <div className="box">
 
-                </div>
-                <div className={styles.actions}>
-                  <Button styleType="secondary" href="/home">
-                    SIGN IN
-                  </Button>
-                </div>
-              </section>
-          </div>
-          </Main>
-          </FeaturedImage>        
+                  <section className="hero text-center">
+                    <Heading className={styles.heading} level="h1">
+                      SIGN IN
+                    </Heading>
+                    <div className="form__input-group">
+                      <input type="text" className="form__input" autoFocus placeholder="Username or email"></input>
+                    </div>
+                    <div className="form__input-group">
+                      <input type="password" className="form__input" autoFocus placeholder="Password"></input>
+
+                    </div>
+                    <div className={styles.actions}>
+                      <Button styleType="secondary" href="/home">
+                        SIGN IN
+                      </Button>
+                    </div>
+                  </section>
+              </div>
+            </Main>
+                  
         </div>
        </Main>
       
