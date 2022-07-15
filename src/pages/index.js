@@ -32,7 +32,7 @@ export default function Page() {
       
      
        <Main className={styles.body} style{
-         background-image ={mainBanner}} >
+         ...background-image ={mainBanner}} >
          <div className="body">
           
             <Main className={styles.box}>
