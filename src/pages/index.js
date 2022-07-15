@@ -38,11 +38,7 @@ export default function Page() {
            <FeaturedImage image={mainBanner}>
           <Main className={styles.box} >
           <div className="box">
-              <FeaturedImage
-                className={styles['featured-image']}
-                image={MyFeaturedImage}
-                priority
-              />
+              
               <section className="hero text-center">
                 <Heading className={styles.heading} level="h1">
                   SIGN IN
