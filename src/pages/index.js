@@ -35,7 +35,7 @@ export default function Page() {
      
        <Main className={styles.body} >
          <div className="body">
-
+          <Main className={styles.box} >
           <div className="box">
               <FeaturedImage
                 className={styles['featured-image']}
@@ -60,6 +60,7 @@ export default function Page() {
                 </div>
               </section>
           </div>
+          </Main>
         </div>
        </Main>
       
