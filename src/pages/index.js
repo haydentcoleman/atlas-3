@@ -11,7 +11,7 @@ import {
 import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
 const mainBanner = {
-    sourceUrl: '/public/sign-in-screen.jpeg',
+    sourceUrl: '/sign-in-screen.jpeg',
     mediaDetails: { width: 300, height: 150 },
     altText: 'Portfolio Banner',
   };
