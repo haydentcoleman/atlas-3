@@ -33,7 +33,7 @@ export default function Page() {
       
       
      
-       <Main className={styles.box} >
+       <Main className={styles.body} >
          <div className="body">
 
           <div className="box">
