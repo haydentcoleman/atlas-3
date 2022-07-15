@@ -12,11 +12,11 @@ import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
 const mainBanner = {
     sourceUrl: '/sign-in-screen.jpeg',
-    mediaDetails: { width: 300, height: 150 },
+    mediaDetails: { width: 1000, height: 800 },
     altText: 'Portfolio Banner',
   };
 const MyFeaturedImage = () => (
-  <FeaturedImage image={mainBanner} width={300} height={1500} />
+  <FeaturedImage image={mainBanner} width={1000} height={800} />
 );
 export default function Page() {
   const { useQuery } = client;
@@ -35,7 +35,7 @@ export default function Page() {
      
        <Main className={styles.body} >
          <div className="body">
-           <FeaturedImage image={mainBanner} />
+           <FeaturedImage image={mainBanner}>
           <Main className={styles.box} >
           <div className="box">
               <FeaturedImage
@@ -62,6 +62,7 @@ export default function Page() {
               </section>
           </div>
           </Main>
+          </>        
         </div>
        </Main>
       
