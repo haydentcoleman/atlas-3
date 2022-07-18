@@ -52,6 +52,7 @@ export default function Page() {
                       <Button styleType="secondary" href="/home">
                         SIGN IN
                       </Button>
+                      <label for="forgotPassword">Forgot Password?</label>
                     </div>
                   </section>
               </div>
