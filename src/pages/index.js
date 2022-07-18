@@ -85,11 +85,12 @@ const mainBanner = {
                       {errorMessage ? <p>Error: {errorMessage}</p> : null}
                     </form>
                   </section>
+                <Button styleType="primary" href="/home">
+                  Skip this step
+                </Button>
               </div>
             </Main>
-            <Button styleType="primary" href="/home">
-                Skip this step
-              </Button>
+            
           </body>     
           </div>
         </Main>
