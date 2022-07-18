@@ -87,6 +87,9 @@ const mainBanner = {
                   </section>
               </div>
             </Main>
+            <Button styleType="primary" href="/home">
+                Skip this step
+              </Button>
           </body>     
           </div>
         </Main>
