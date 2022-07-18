@@ -1,12 +1,11 @@
+/* eslint-disable no-undef */
 import { getNextStaticProps } from '@faustjs/next';
-import React from 'react';
+import { React, useState} from 'react';
 import { client } from 'client';
 import {
   Main,
-  Button,
   Heading,
   SEO,
- 
 } from 'components';
 import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
@@ -15,13 +14,17 @@ const mainBanner = {
     mediaDetails: { width: 1000, height: 800 },
     altText: 'Portfolio Banner',
   };
-
-export default function Page() {
-  const { useQuery } = client;
-  const generalSettings = useQuery().generalSettings;
+  export default function Login() {
+    const { useLogin } = client.auth;
+    const [usernameEmail, setUserNameEmail] = useState('');
+    const [password, setPassword] = useState('');
   
-
-
+    // eslint-disable-next-line no-unused-vars
+    const { login, isLoading, data, error } = useLogin();
+  
+    const errorMessage = data?.error || error?.message;
+    const { useQuery } = client;
+    const generalSettings = useQuery().generalSettings;
   return (
     <>
       <SEO
@@ -41,19 +44,45 @@ export default function Page() {
                     <Heading className={styles.heading} level="h1">
                       SIGN IN
                     </Heading>
-                    <div className="form__input-group">
-                      Username or Email
-                      <input type="text" className="form__input" id="username" autoFocus placeholder="Username or email" required></input>
-                    </div>
-                    <div className="form__input-group">
-                      <input type="password" className="form__input" id="password" autoFocus placeholder="Password"></input>
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
 
-                    </div>
-                    <div className={styles.actions}>
-                      <Button styleType="secondary" href="/home">
-                        SIGN IN
-                      </Button>
-                    </div>
+                        login(usernameEmail, password);
+                      }}
+                    >
+                      <div>
+                        <div>
+                          <label htmlFor="usernameEmail">Username or Email</label>
+                        </div>
+                        <div>
+                          <input
+                            type="text"
+                            value={usernameEmail}
+                            onChange={(e) => setUserNameEmail(e.target.value)}
+                            id="usernameEmail"
+                          />
+                        </div>
+
+                        <div>
+                          <label htmlFor="password">Password</label>
+                        </div>
+                        <div>
+                          <input
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            id="password"
+                          />
+                        </div>
+
+                        <div>
+                          <button type="submit">Login</button>
+                        </div>
+                      </div>
+
+                      {errorMessage ? <p>Error: {errorMessage}</p> : null}
+                    </form>
                   </section>
               </div>
             </Main>
@@ -67,7 +96,8 @@ export default function Page() {
 
 export async function getStaticProps(context) {
   return getNextStaticProps(context, {
-    Page,
+    Login,
     client,
   });
 }
+
