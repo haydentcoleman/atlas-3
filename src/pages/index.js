@@ -42,7 +42,7 @@ export default function Page() {
                       SIGN IN
                     </Heading>
                     <div className="form__input-group">
-                      <input type="text" className="form__input" autoFocus placeholder="Username or email"></input>
+                      <input type="text" className="form__input" autoFocus placeholder="Username or email" required></input>
                     </div>
                     <div className="form__input-group">
                       <input type="password" className="form__input" autoFocus placeholder="Password"></input>
