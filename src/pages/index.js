@@ -6,6 +6,7 @@ import {
   Main,
   Heading,
   SEO,
+  Button
 } from 'components';
 import styles from 'styles/pages/_signin.module.scss';
 import { pageTitle } from 'utils';
@@ -36,7 +37,7 @@ const mainBanner = {
      
        <Main className={styles.body} background={mainBanner}>
          <div className="body" background-image={mainBanner}>
-          
+          <body>
             <Main className={styles.box}>
               <div className="box">
 
@@ -77,7 +78,7 @@ const mainBanner = {
                         </div>
 
                         <div>
-                          <button type="submit">Login</button>
+                          <Button type="submit">Login</Button>
                         </div>
                       </div>
 
@@ -86,9 +87,9 @@ const mainBanner = {
                   </section>
               </div>
             </Main>
-                  
-        </div>
-       </Main>
+          </body>     
+          </div>
+        </Main>
       
     </>
   );

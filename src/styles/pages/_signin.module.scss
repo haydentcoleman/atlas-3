@@ -5,14 +5,15 @@
     margin-bottom: 8rem;
   }
 }
+.Button{
+  background-color:#93c841;
+  color:#93c841;
+  font-size: 12px;
+}
 
 .body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    
-    font-size: 18px;
-    
+    background-image: './public/sign-in-screen.jpeg';
+    font-size: 10px;
     background-size: cover;
 }
 
