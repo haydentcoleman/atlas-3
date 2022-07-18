@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 import { getNextStaticProps } from '@faustjs/next';
 import { React, useState} from 'react';
 import { client } from 'client';
