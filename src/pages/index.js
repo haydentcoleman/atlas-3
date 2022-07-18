@@ -42,10 +42,11 @@ export default function Page() {
                       SIGN IN
                     </Heading>
                     <div className="form__input-group">
-                      <input type="text" className="form__input" autoFocus placeholder="Username or email" required></input>
+                      Username or Email
+                      <input type="text" className="form__input" id="username" autoFocus placeholder="Username or email" required></input>
                     </div>
                     <div className="form__input-group">
-                      <input type="password" className="form__input" autoFocus placeholder="Password"></input>
+                      <input type="password" className="form__input" id="password" autoFocus placeholder="Password"></input>
 
                     </div>
                     <div className={styles.actions}>
